@@ -46,27 +46,6 @@ Objekt bewegen: Auf Objekt tippen, halten und verschieben.
 </p>
 </section>
 
-<!-- Android: bestehende WebXR-Version -->
-<section id="android-option" hidden>
-<a class="ar-button" href="./android.html">
-START
-</a>
-<p class="note">
-HMA R-33
-</p>
-</section>
-
-<!-- Andere Geräte: beide Möglichkeiten anbieten -->
-<section id="other-option" hidden>
-<p>Wähle die passende AR-Version für dein Gerät:</p>
-<a class="ar-button" rel="ar" href="./models/model.usdz">
-iPhone / iPad – AR starten
-</a>
-<a class="ar-button" href="./android.html">
-Android – AR starten
-</a>
-</section>
-
 <noscript>
 <p>Bitte aktiviere JavaScript oder verwende einen der direkten Links:</p>
 <a class="ar-button" rel="ar" href="./models/model.usdz">
@@ -87,8 +66,6 @@ navigator.maxTouchPoints > 1;
 
 const isIOS =
 /iPhone|iPad|iPod/i.test(ua) || isIPadOS;
-
-const isAndroid = /Android/i.test(ua);
 
 if (isIOS) {
 document.getElementById("ios-option").hidden = false;
